@@ -49,7 +49,7 @@ namespace hma_api.Controllers
         if (String.IsNullOrEmpty(token))
           return NotFound(ApiResponse<string>.CreateResponse(String.Empty, "Error creating user"));
 
-        return Ok(ApiResponse<TokenDTO>.CreateResponse(new TokenDTO(token), "Register successfull"));
+        return Ok(ApiResponse<TokenDTO>.CreateResponse(new TokenDTO(token), "Register successful"));
       }
       catch (Exception)
       {
