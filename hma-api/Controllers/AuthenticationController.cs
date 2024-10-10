@@ -1,7 +1,5 @@
 ﻿using hma_api.Application.DTOs;
 using hma_api.Application.Interfaces;
-using hma_api.Domain.Entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace hma_api.Controllers

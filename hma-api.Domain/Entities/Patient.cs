@@ -10,10 +10,10 @@ namespace hma_api.Domain.Entities
   {
     public int Id { get; set; }
     public int User_id { get; set; }
-    public string Date_of_birth { get; set; }
+    public DateTime Date_of_birth { get; set; }
     public int Gender { get; set; }
     public int Marital_status { get; set; }
-    public string Adress { get; set; }
+    public string Address { get; set; }
     public string Phone_number { get; set; }
   }
 }

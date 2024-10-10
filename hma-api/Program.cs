@@ -41,10 +41,12 @@ builder.Services.AddDbContext<MyDbContext>(options =>
 
 //Inject repositories
 builder.Services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
+builder.Services.AddScoped(typeof(ICrudRepository<>), typeof(CrudRepository<>));
 
 //Inject services
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<PasswordService>();
+builder.Services.AddScoped(typeof(ICrudService<>), typeof(CrudService<>));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
